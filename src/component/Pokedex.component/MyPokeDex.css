@@ -1,0 +1,123 @@
+
+.Card-item:hover{
+    scale: 1.006;
+
+}
+
+.Pokedex-Con{
+    height: 769px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & nav{
+        height: 4rem;
+        padding-top: .5rem;
+        font-size: 28px;
+        text-align: center;
+    }
+    & .Cards-Con{
+        height: 39.5rem;
+        background-color: #ffffff;
+        padding: 5px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow:auto;
+        gap: 10px;
+        & .Card-item{
+            background-color: #f3f4f7;
+            box-shadow: 0 0 2px 1px #d5d6dc;
+            display: flex;
+            width: 29.9rem;
+            height: 15rem;
+            gap: 1rem;
+            & img{
+                width: 11rem;
+            }
+            & .Card-detail{
+                display: flex;
+                flex-direction:column ;
+                width: 18rem;
+                line-height: 2px;
+                & .Card-Name {
+                    display: flex;
+                    justify-content: space-between;
+                    & p{
+                        font-size: 30px;
+                        font-weight:400;
+                        font-family: cursive;
+
+                    }
+                    
+                    & .del-botton{
+                        width: 20%;
+                        text-align:center;
+                        font-size: 40px;
+                        color: #dc7777;
+                        cursor: pointer;
+                    }
+                }
+                
+                & .Card-status{
+                    padding-right: 1.5rem;
+                    height: 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    font-size: 16px;
+                    & .stat{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 1.6rem;
+                    }
+                }
+            }
+        }
+        & .Happiness-images{
+            display: flex;
+            gap: 3px;
+            margin-top: 1rem;
+            & img{
+                width: 2.8rem;
+            }
+        }
+    }
+    & .footer{
+        background-color: #ec5656;
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        & h1{
+            position: absolute;
+            background-color: #ec5656;
+            color: aliceblue;
+            width: 7.5rem;
+            height: 7rem;
+            border-radius: 70px 70px 0 0;;
+            font-size: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: -4rem;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.Bar {
+    display: flex;
+    align-items: center;
+    background-color: #d4d4d4;
+    width: 13rem;
+    border-radius: 25px;
+}
+.Bar-fill {
+    height: 26px;
+    background-color: #f3701a;
+    transition: width 0.3s ease-in-out; 
+    border-radius: 25px;
+
+}

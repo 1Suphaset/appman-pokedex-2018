@@ -1,0 +1,126 @@
+::-webkit-scrollbar {
+    width: 12px;
+    position: absolute;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+.Cards-item:hover{
+    scale: 1.006;
+
+}
+
+
+.AllCards{
+    height: 719px;
+    width: 976px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: .5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 0 17px rgba(0, 0, 0, 0.729);
+    & .search-container{
+        width: 100%;
+        display: flex;
+        & .search-input{
+            width: 100%;
+            position: relative;
+            height: 2.5rem;
+            top: -.5rem;
+            font-family: cursive;
+            font-size: large;
+            border: solid #e6e6e6;
+        }
+        & img{
+            position: absolute;
+            width: 2.5rem;
+            right: 1rem;
+            top: .6rem;
+        }
+    }
+    & .Cards-Con{
+        width: 100%;
+        height: 649px;
+        padding: 5px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        & .Cards-item{
+            background-color: #f3f4f7;
+            box-shadow: 0 0 2px 1px #d5d6dc;
+            display: flex;
+            width: 100%;
+            height: 15rem;
+            padding: 5px;
+            padding-bottom: 1.5rem;
+            gap: 1rem;
+            & img{
+                width: 11rem;
+            }
+            & .Cards-detail{
+                display: flex;
+                flex-direction:column ;
+                width: 55%;
+                line-height: 2px;
+                & p{
+                    font-size: 30px;
+                    font-weight:400;
+                    font-family: cursive;
+                }
+                & .Cards-status{
+                    padding-right: 1.5rem;
+                    height: 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    font-size: 16px;
+                    & .stats{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 1.6rem;
+                    }
+                }
+            }
+        & .add-botton {
+            width: 20%;
+            text-align: right;
+            cursor: pointer;
+            display: none;
+            color: #dc7777;
+        }
+        }
+        & .Happiness-images{
+            display: flex;
+            gap: 3px;
+            margin-top: 1.5rem;
+            & img{
+                width: 2.8rem;
+            }
+        }
+    }
+}
+
+.Cards-Bar {
+    display: flex;
+    align-items: center;
+    background-color: #d4d4d4;
+    width: 24rem;
+    border-radius: 25px;
+
+  }
+  .Cards-Bar-fill {
+    height: 26px;
+    background-color: #f3701a;
+    transition: width 0.3s ease-in-out; 
+    border-radius: 25px;
+
+  }
